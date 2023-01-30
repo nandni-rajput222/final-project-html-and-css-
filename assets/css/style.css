@@ -1,0 +1,223 @@
+*{padding: 0%; margin: 0%; box-sizing: border-box; font-family: sans-serif; }
+/* header and nav bar styling */
+header{
+    width: 100%;
+    height: 100vh;
+      }
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+    box-shadow: 3px 0px 7px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+.menu a:hover {
+    background: black;
+    color: white;
+}
+.menu a:nth-last-child(3){
+    background: black;
+    color: white;
+}
+.menu a:last-child{
+    background: black;
+    color: white;
+}
+.menu a:last-child:hover{
+    background-color: skyblue;
+    color: white;
+}
+/* 1section style */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 2000px;
+}
+.left{
+    flex-basis: 50%;
+    height: 600px;
+
+    animation-name: animate;
+    animation-delay: 5.5;
+    animation-duration:20s;
+    background-image: url(../image/left4.webp);
+    background-size: cover;
+    background-position: left;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 40px 60px 0px black;
+
+}
+@keyframes animate{
+    0%{
+        transition: 1.10;
+        background-image: url(../image/left.webp);
+    }
+    20%{
+        transition: 1.5;
+        background-image: url(../image/left1.webp);
+    }
+    40%{
+        transition: 1.10;
+        background-image: url(../image/left2.webp);
+    }
+    60%{
+        transition: 1.5;
+        background-image: url(../image/left3.avif);
+    }
+    80%{
+        transition: 1.10;
+        background-image: url(../image/left5.webp);
+    }
+    100%{
+        transition: 1.5;
+        background-image: url(../image/left6.webp)
+        };
+
+    }
+.right{
+    flex-basis: 50%;
+    max-width: 550px;
+    margin-left: 100px;
+}
+.right h1{
+    font-size: 50px;
+}
+.right p{
+    font-size: 25px;
+    margin: 20px;
+}
+button{
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+/* discount style */
+#discount{
+    padding: 50px 0px;
+    font-size: 50px;
+    text-align: center;
+}
+.disc{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    align-items: center;
+    margin-left: 60px;
+}
+.disc> div img{
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 5px 7px 15px black;
+    border-radius: 25px;
+}
+.disc> div img:hover{
+    transform: scale(1.1);
+    transition: 0.4 linear;
+}
+/* man style */
+#man{
+    padding: 80px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+.man-row{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    align-items: center;
+    margin-left: 100px;
+}
+.man-box{
+    flex: 15%;
+    padding: 8px;
+    text-align: center;
+
+}
+.man-box> img{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 5px 7px 15px black;
+    border-radius: 20%;
+}
+.man-box> h2{
+    margin: 20px 0px;
+}
+.man-box> h3{
+    background: black;
+    color: white;
+    border-radius:50% ;
+}
+.man-box> img:hover{
+    transform: scale(1.1);
+}
+/* women style */
+#woman{
+    padding: 80px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+.woman-row{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    align-items: center;
+    margin-left: 100px;
+}
+.woman-box{
+    flex: 15%;
+    padding: 8px;
+    text-align: center;
+
+}
+.woman-box> img{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 5px 7px 15px black;
+    border-radius: 20%;
+}
+.woman-box> h2{
+    margin: 20px 0px;
+}
+.woman-box> h3{
+    background: black;
+    color: white;
+    border-radius:50% ;
+}
+.woman-box> img:hover{
+    transform: scale(1.1);
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+/* login page style */
